@@ -4,6 +4,9 @@ const API = axios.create({
   baseURL: 'https://e-commerce-backend-api-dev.onrender.com',
   withCredentials: true, // Add this for cookies/sessions
   timeout: 10000 // Add timeout
+  headers: {
+    'Content-Type': 'application/json'
+  }
 });
 
 // Add JWT to requests automatically
